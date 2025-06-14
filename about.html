@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Minahil's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #eaf7f8;
+            color: #333;
+        }
+
+
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d9da5;
+        }
+
+        /* Navigation Links */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            position: relative;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #2d9da5;
+        }
+
+        nav a.active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #2d9da5;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #fff;
+            color: #2d9da5;
+            padding: 10px 20px;
+            border: 1px solid #2d9da5;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #2d9da5;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #2d9da5;
+            padding: 10px 20px;
+            border: 1px solid #2d9da5;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #def3f5;
+            /* match index.html */
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-bottom: 60px;
+            background-color: #def3f5;
+        }
+
+        .box-link {
+            padding: 12px 25px;
+            border: 2px solid #168aad;
+            border-radius: 25px;
+            background-color: #fff;
+            color: #168aad;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            min-width: 160px;
+            text-align: center;
+        }
+
+        .box-link:hover {
+            background-color: #168aad;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d9da5;
+        }
+
+        .site-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            margin-top: 5px;
+        }
+
+        .social-links a {
+            color: #61dafb;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MERN Stack Developer</div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="eduaction.html" class="nav-link">Education</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="portfolio.html" class="nav-link">Projects</a>
+        </nav>
+        <button class="btn-primary" onclick="talk()">LET'S TALK</button>
+    </header>
+
+    <section class="hero">
+        <h1>Minahil's Portfolio</h1>
+        <p>
+            I'm currently a <strong>4th semester student</strong> pursuing my Bachelor's degree in <strong>Computer
+                Science</strong> at <strong>COMSATS University</strong>. I'm passionate about full-stack development,
+            especially using the MERN stack, and enjoy building modern, responsive web applications.
+        </p>
+    </section>
+
+    <section class="section">
+        <a href="eduaction.html" class="box-link">View Education</a>
+        <a href="experience.html" class="box-link">View Experience</a>
+        <a href="skills.html" class="box-link">View Skills</a>
+        <a href="projects.html" class="box-link">View Projects</a>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; Minahil's Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/minahil-mustafa-5742742a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                <a href="https://github.com/YOUR-GITHUB-ID" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

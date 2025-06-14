@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience - Minahil Mustafa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #eaf7f8;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d9da5;
+        }
+
+        /* Navigation Links */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            position: relative;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #2d9da5;
+        }
+
+        nav a.active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #2d9da5;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #fff;
+            color: #2d9da5;
+            padding: 10px 20px;
+            border: 1px solid #2d9da5;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #2d9da5;
+            color: #fff;
+        }
+
+        .experience-section {
+            background-color: #def3f5;
+            padding: 60px 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-header {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .experience-card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .experience-card h2 {
+            color: #2d9da5;
+            margin-bottom: 10px;
+        }
+
+        .experience-card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .section-header {
+                font-size: 2em;
+            }
+
+            .experience-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">MERN Stack Developer</div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="experience.html" class="nav-link active">Experience</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+        </nav>
+        <button class="btn-primary" onclick="talk()">LET'S TALK</button>
+    </header>
+
+    <section class="experience-section">
+        <h1 class="section-header">My Learning Journey</h1>
+        <p style="max-width: 700px; font-size: 1.1em; text-align: center; margin-bottom: 40px;">
+            As a Computer Science undergraduate, I may not have industry experience yet, but I have gained solid
+            practical knowledge and skills through academic projects, self-learning, and personal exploration of various
+            development domains.
+        </p>
+
+        <!-- Experience Card 1 -->
+        <div class="experience-card">
+            <h2>Backend Development with Java OOP</h2>
+            <p><strong>Duration:</strong> 2023 – Present</p>
+            <p>
+                Built multiple backend modules using Java and Object-Oriented Programming (OOP), including a Flex
+                Management System with Admin, HOD, Teacher, and Student modules. These projects helped me understand key
+                programming principles such as encapsulation, inheritance, and modular design in real-world scenarios.
+            </p>
+        </div>
+
+        <!-- Experience Card 2 -->
+        <div class="experience-card">
+            <h2>Frontend & UI/UX Design</h2>
+            <p><strong>Duration:</strong> 2023 – Present</p>
+            <p>
+                Proficient in creating responsive user interfaces using HTML, CSS, and JavaScript. I am currently
+                enhancing my UI/UX skills by designing intuitive user flows and layouts using tools like Figma and Adobe
+                XD, with a focus on accessibility and user-centered design.
+            </p>
+        </div>
+
+        <!-- Experience Card 3 -->
+        <div class="experience-card">
+            <h2>Learning AI with Python & DSA with C++</h2>
+            <p><strong>Duration:</strong> 2024 – Present</p>
+            <p>
+                Exploring Artificial Intelligence and Machine Learning concepts through Python while strengthening my
+                core computer science fundamentals by solving Data Structures and Algorithms problems using C++. This
+                combination is building my analytical thinking and programming logic.
+            </p>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

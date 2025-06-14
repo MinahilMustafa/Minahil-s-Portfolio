@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills - Minahil Mustafa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #eaf7f8;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d9da5;
+        }
+
+        /* Navigation Links */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            position: relative;
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: #2d9da5;
+        }
+
+        nav a.active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #2d9da5;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #fff;
+            color: #2d9da5;
+            padding: 10px 20px;
+            border: 1px solid #2d9da5;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #2d9da5;
+            color: #fff;
+        }
+
+        .skills-section {
+            background-color: #def3f5;
+            padding: 60px 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-header {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .skills-card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .skills-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills-card h2 {
+            color: #2d9da5;
+            margin-bottom: 10px;
+        }
+
+        .skills-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .skills-card ul li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .section-header {
+                font-size: 2em;
+            }
+
+            .skills-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">MERN Stack Developer</div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="skills.html" class="nav-link active">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+        </nav>
+        <button class="btn-primary" onclick="talk()">LET'S TALK</button>
+    </header>
+
+    <section class="skills-section">
+        <h1 class="section-header">My Technical Skills</h1>
+        <p style="max-width: 700px; font-size: 1.1em; text-align: center; margin-bottom: 40px;">
+            Below are the core technologies and tools I've worked with during my journey as a developer.
+        </p>
+
+        <!-- Skill Category 1 -->
+        <div class="skills-card">
+            <h2>Frontend Development</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Bootstrap, Java Sprint boot</li>
+            </ul>
+        </div>
+
+        <!-- Skill Category 2 -->
+        <div class="skills-card">
+            <h2>Backend Development</h2>
+            <ul>
+                <li>Node.js, Express.js</li>
+                <li>Java OOP</li>
+                <li>C++, C, DSA</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <!-- Skill Category 3 -->
+        <div class="skills-card">
+            <h2>Database & Tools</h2>
+            <ul>
+                <li>MongoDB</li>
+                <li>Git, GitHub</li>
+                <li>SQL, MySQL</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
+
+        <!-- Skill Category 4 -->
+        <div class="skills-card">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Agile & Scrum Methodologies</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

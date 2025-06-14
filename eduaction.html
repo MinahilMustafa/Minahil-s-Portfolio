@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education - Minahil Mustafa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        .highlight {
+            color: #333;
+        }
+
+        .section-header {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .education-section {
+            background-color: #def3f5;
+            padding: 60px 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .education-card {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 800px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .education-card h2 {
+            color: #2d9da5;
+            margin-bottom: 10px;
+        }
+
+        .education-card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .section-header {
+                font-size: 2em;
+            }
+
+            .education-card {
+                padding: 20px;
+            }
+
+            .btn-primary {
+                background-color: #fff;
+                color: #2d9da5;
+                padding: 10px 20px;
+                border: 1px solid #2d9da5;
+                border-radius: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-left: 10px;
+            }
+
+            .btn-primary:hover {
+                background-color: #2d9da5;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">MERN Stack Developer</div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="eduaction.html" class="nav-link active">Education</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+        </nav>
+        <button class="btn-primary" onclick="talk()">LET'S TALK</button>
+    </header>
+
+    <section class="education-section">
+        <h1 class="section-header"><span class="highlight">My Educational Journey</span></h1>
+        <p style="max-width: 700px ; font-size: 1.1em; text-align: center; margin-bottom: 40px;">
+            I have a strong academic background rooted in engineering and computer science. My journey reflects passion,
+            consistency, and technical excellence that drives my future as a developer.
+        </p>
+
+        <div class="education-card">
+            <h2>Intermediate - FSC Pre-Engineering</h2>
+            <p>
+                I completed my Intermediate education in FSC Pre-Engineering from <strong>STARS ACADEMY
+                    Shadhra</strong>.
+                I achieved an <strong>A+</strong> grade, laying a strong foundation in mathematics, physics, and
+                chemistry.
+                This early academic success gave me the analytical skills I now apply in problem-solving and
+                programming.
+            </p>
+        </div>
+
+        <div class="education-card">
+            <h2>Comsats University Islamabad</h2>
+            <p>
+                I am currently pursuing a Bachelor's degree in Computer Science (BSCS) at <strong>Comsats University
+                    Islamabad</strong>. I’m in my <strong>4th semester</strong>, focusing on full-stack web development
+                using
+                the MERN stack, mastering data structures, and excelling in object-oriented programming using Java.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
